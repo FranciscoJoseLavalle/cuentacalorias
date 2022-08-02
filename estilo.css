@@ -59,9 +59,14 @@ main {
     max-width: 7rem;
     font-size: 175%;
     cursor: pointer;
+    transition: all .5s;
+    border-radius: 50%;
 }
 .circular {
     border-radius: 50%;
     background-color: #ddd;
+}
+.teclas:hover {
+    background-color: #ccc;
 }
 /* ------------Calculadora------------ */
