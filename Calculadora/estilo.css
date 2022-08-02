@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 h1 {
     text-align: center;
@@ -28,14 +29,12 @@ main {
     height: 4rem;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
-    text-align: center;
 }
 .panel {
     font-size: 1.7rem;
     display: flex;
     justify-content: flex-end;
     color: #fff;
-    text-align: center;
 }
 .calculadora__teclado {
     display: flex;
@@ -48,14 +47,17 @@ main {
 .fila {
     display: flex;
     gap: .5rem;
+    width: 100%;
+    justify-content: center;
 }
 .fila p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
-    width: 3rem;
-    font-size: 1.3rem;
+    aspect-ratio: 1 / 1;
+    width: 22%;
+    max-width: 7rem;
+    font-size: 175%;
     cursor: pointer;
 }
 .circular {
